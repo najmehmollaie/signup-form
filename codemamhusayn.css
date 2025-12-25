@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: rgb(134, 230, 232);
+    
+}
+       
+
+/* کل صفحه */
+.container {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+/* ======= فرم ثبت نام ======= */
+.form-section {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 100;
+    color: rgb(134, 230, 232);
+    position: relative;
+}
+
+/* ردیف‌ها */
+.row {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+
+/* ورودی‌ها */
+.row input,
+.row select,
+.row textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(134, 230, 232);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+
+/* نام و نام خانوادگی کنار هم */
+.row input[type="text"] {
+    flex: 1;
+}
+
+/* شماره موبایل: اون‌ور و تمام عرض */
+input[name="phone"] {
+    width: 100%;
+    text-align: right;
+    direction: rtl;
+}
+
+/* رادیو باتن‌ها */
+.row label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+/* توضیحات */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* دکمه */
+button {
+     width: 100%;
+     padding: 10px;
+     background-color: rgb(134, 230, 232);
+     color: white;
+     border: white;
+     border-style: solid;
+     border-radius: 5px;
+     border-width: 1px;
+     font-size: 18px;
+     cursor: pointer;
+     transition:
+     background-color 0.2s,
+     color 0.2s
+
+
+}
+
+button:hover {
+    background-color:white;
+    color:rgb(134, 230, 232);
+    border-color: rgb(134, 230, 232);
+
+}
+
+button:active {
+    background-color: rgb(134, 230, 232);
+    color: white;
+
+}
+
+/* ======= درباره آموزشگاه ======= */
+.info-section {
+    color:rgb(134, 230, 232);
+    width: 50%;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+}
+
+.info-section h2,
+.info-section h3 {
+    margin-top: 70;
+}
+
+.info-section h2 {
+    color: rgb(134, 230, 232);
+     margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 100;
+    position: relative;
+
+}
+
+.info-section h3 {
+    color:rgb(134, 230, 232);
+    font-size: 26px;
+    font-weight: 100;
+    position: relative; 
+}
+
+
+
+.info-section ul {
+ color: black;
+ padding-right: 20px;
+ list-style: none;
+ padding-right: 0;
+ margin: 0;   
+}
+.info-section ul i {
+    color:rgb(134, 230, 232)
+}
+.info-section ul li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+    
+
+
+.info-section p {
+    line-height: 2;
+    text-align: right;
+    color: black;
+}
